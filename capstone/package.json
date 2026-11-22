@@ -1,0 +1,11 @@
+{
+  "name": "stockly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stockly - one deployable service: Express API + built React app",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "npm install --include=dev --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "npm start --prefix backend"
+  }
+}
