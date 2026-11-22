@@ -1,88 +1,123 @@
-DBMS Lab 2 – College Record Management
-📘 Overview
-This folder contains my Database Management Systems Lab 2 Practical Assignment, based on a College Record Management database.
+📚 Database Management Systems (DBMS) – Semester 3
+Welcome to my Database Management Systems (DBMS) repository. This repository contains my practical lab assignments, SQL exercises, database concepts, and semester capstone project completed as part of my B.Tech Computer Science and Engineering (AI & ML) coursework.
 
-The practical focuses on creating and querying a relational database using SQL. A single database containing four main tables — Student, Faculty, Course and Exam — is used to perform different SQL operations and queries.
+The repository is organized into individual lab folders along with a complete Capstone Project.
 
-The assignment consists of 12 questions covering basic SQL operations, data retrieval, joins, subqueries, views, indexing, window functions and Common Table Expressions (CTEs).
+📂 Repository Structure
+DBMS/
+│
+├── Lab1/
+│   └── SQL Practical Assignments
+│
+├── LAB2/
+│   └── SQL and Database Exercises
+│
+├── LAB3/
+│   └── Advanced DBMS Practicals
+│
+├── LAB4/
+│   └── Database Practical Assignments
+│
+├── capstone/
+│   │
+│   ├── frontend/
+│   │   ├── public/
+│   │   ├── src/
+│   │   └── package.json
+│   │
+│   └── backend/
+│       ├── config/
+│       ├── controllers/
+│       ├── models/
+│       ├── routes/
+│       ├── app.js
+│       ├── server.js
+│       └── package.json
+│
+└── README.md
+🧪 Practical Lab Work
+This repository includes four practical lab sections:
 
-🗄️ Database Schema
-The College database consists of the following four tables:
+Folder	Description
+Lab1	Database fundamentals and practical exercises
+LAB2	SQL queries and database operations
+LAB3	Advanced database concepts and exercises
+LAB4	Additional DBMS practical assignments
+Each folder contains the corresponding practical work and related files.
 
-Table	Description	Primary Key
-Student	Stores student details	student_id
-Faculty	Stores faculty information	faculty_id
-Course	Stores course details	course_id
-Exam	Stores examination records and marks	exam_id
-Table Relationships
-Course is connected to Faculty through faculty_id.
-Exam is connected to Student through student_id.
-Exam is connected to Course through course_id.
-These relationships are maintained using foreign key constraints.
+🏢 Capstone Project – Apartment Management System
+The major project included in this repository is an Apartment Management System, developed as part of the DBMS Semester 3 Capstone Project.
 
-📝 Topics Covered (12 Questions)
-Q. No.	Topic	SQL Concepts
-Q1	SQL Operations (DML)	INSERT, UPDATE, DELETE
-Q2	Filtering and Sorting	WHERE, ORDER BY
-Q3	Grouping and Aggregation	GROUP BY, COUNT, AVG, MAX
-Q4	Inner Join	INNER JOIN
-Q5	Left Join	LEFT JOIN
-Q6	Self Join	Joining a table with itself
-Q7	Subquery	NOT IN
-Q8	Set Operation	INTERSECT
-Q9	Views	CREATE VIEW
-Q10	Indexing	B-tree Index
-Q11	Window Function	RANK(), PARTITION BY
-Q12	CTE Report	WITH clause and multiple CTEs
-Total Marks: 25
+The application is designed to manage apartment society operations through a web-based platform.
 
-💻 Practical Implementation
-The practical work includes:
+Project Architecture
+The project is organized into two independent components:
 
-Inserting missing examination records, updating student marks and deleting an incorrect record.
-Retrieving CSE students and arranging them alphabetically.
-Calculating the number of students appearing for each course, average marks and highest marks.
-Combining examination, student and course information using INNER JOIN.
-Displaying all students, including those who have not appeared in any examination.
-Finding pairs of faculty members belonging to the same department using SELF JOIN.
-Finding students without examination records using a subquery.
-Applying INTERSECT to identify students satisfying two conditions.
-Creating a reusable course_report view to display average course marks.
-Creating a B-tree index on the course_id column of the Exam table.
-Ranking students within each course using the RANK() window function.
-Generating a course-wise statistical report using multiple CTEs.
-🛠️ Technologies Used
-SQL – Database queries and operations.
-PostgreSQL – Relational database management system and SQL features used in the practical.
-Relational Database Concepts – Primary keys, foreign keys and table relationships.
-🎯 Learning Outcomes
-Through this practical assignment, I gained experience in:
+1. Frontend
 
-Performing data manipulation using SQL.
-Retrieving and filtering database records.
-Applying aggregate functions and grouping.
-Understanding different types of joins.
-Working with subqueries and set operations.
-Creating database views and indexes.
-Using window functions for ranking.
-Writing structured queries using multiple CTEs.
-Understanding relationships between database tables.
-📁 Files Included
-This folder contains the practical assignment report and supporting files:
+User interface and application screens.
+Frontend components and assets.
+Client-side functionality.
+Communication with backend APIs.
+2. Backend
 
-File	Description
-DBMS_Lab2_Arpit_Patni_2501730111.pdf	Complete Lab 2 practical report
-Lab2.1.pdf	Practical question/report file
-Lab2.2.pdf	Practical question/report file
-Lab2.3.pdf	Practical question/report file
-Lab2.4.pdf	Practical question/report file
-👨‍💻 Student Details
-Name: Pravindra  Singh
-Roll Number: 2501730132
-Course: B.Tech CSE (AI & ML)
-Section: A
-University: K.R. Mangalam University, Gurugram
-Subject: Database Management System (DBMS)
-Lab: 2 – College Record Management
+Server-side application using Node.js.
+API routes and controllers.
+Database configuration and models.
+Backend request handling.
+Technology Stack
+Frontend: React.js / JavaScript
+Backend: Node.js
+Database: MySQL
+API Communication: HTTP APIs
+Note: Refer to the individual package.json files for the exact dependencies used.
 
-This repository contains my academic practical work completed as part of the DBMS course.
+Project Structure
+capstone/
+│
+├── frontend/
+│   └── React application
+│
+└── backend/
+    ├── config/
+    ├── controllers/
+    ├── models/
+    ├── routes/
+    ├── app.js
+    └── server.js
+Running the Project
+Frontend
+
+cd capstone/frontend
+npm install
+npm run dev
+Backend
+
+cd capstone/backend
+npm install
+npm start
+The backend may require environment variables for database connectivity. Configure them using the project's environment setup before starting the server.
+
+🎯 Learning Objectives
+Through these practical assignments and the capstone project, I have worked on:
+
+Understanding relational database concepts.
+Writing and executing SQL queries.
+Database creation and manipulation.
+Understanding database relationships.
+Working with database architecture.
+Connecting a backend application with a database.
+Understanding frontend and backend communication.
+Applying DBMS concepts in a practical project.
+👨‍💻 Author
+Pravindra Singh
+
+B.Tech – Computer Science and Engineering (AI & ML)
+K.R. Mangalam University, Gurugram
+
+GitHub: @pravindrasingh6002-star
+
+📌 Purpose
+This repository serves as a collection of my DBMS practical work and semester project implementations, documenting my learning and application of database management concepts.
+
+⭐ Thank you for visiting my DBMS repository!
