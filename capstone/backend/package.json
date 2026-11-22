@@ -1,0 +1,23 @@
+{
+  "name": "stockly-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node seed/seed.js",
+    "setup-db": "node seed/setup-db.js",
+    "cloud:setup": "node --env-file=.env.cloud seed/setup-db.js",
+    "cloud:seed": "node --env-file=.env.cloud seed/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0"
+  }
+}
