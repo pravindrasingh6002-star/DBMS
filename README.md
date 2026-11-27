@@ -116,6 +116,7 @@ B.Tech – Computer Science and Engineering (AI & ML)
 K.R. Mangalam University, Gurugram
 
 GitHub: @pravindrasingh6002-star
+Deployment Link:- https://dbms-capstone-stockly.onrender.com/
 
 📌 Purpose
 This repository serves as a collection of my DBMS practical work and semester project implementations, documenting my learning and application of database management concepts.
